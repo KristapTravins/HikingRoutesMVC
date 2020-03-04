@@ -1,0 +1,103 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 100px auto 10px;
+    grid-template-areas: 
+        "h h h c c c c c c c c c c c c c"
+        "m m m c c c c c c c c c c c c c"
+        "f f f c c c c c c c c c c c c c";
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+/*  content containers*/
+.content{
+  display: grid;
+  height: 100%;
+  
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows:auto auto auto;
+  grid-template-areas: 
+  "z z z z z x x x x x v v v v v"
+  "e e e e e b b b b b n n n n n"
+  "g g g g g q q q q q w w w w w"
+  ;
+}
+.work{
+grid-area: z;
+   }
+.work2{
+    grid-area: x;
+    
+}
+   
+.work3{
+    grid-area: v;
+    
+}   
+.work4{
+    grid-area: e;
+   
+}   
+.work5{
+    grid-area: b;
+  
+}   
+.work6{
+    grid-area: n;
+}   
+.work7{
+    grid-area: g;
+}   
+.work8{
+    grid-area: q;
+}   
+.work9{
+    grid-area: w;
+}   
+ 
+
+@media (max-width : 900px){
+    .container {
+        display: flex;
+        flex-flow: column;
+        height: 4752px;
+    }
+    .content{
+        display: flex;
+        flex-flow: column;
+      }
+      ul > li {
+        font-family: 'Agency FB', arial;
+        text-decoration: none;
+        list-style: none;
+        font-size: 10.9vw;
+        margin: 0px 0 6px -132px;
+        letter-spacing: 1px;
+    }
+  .menu{
+    margin: 110px 0 6px -9px;
+  }
+  .Logo h1 {
+    font-family: 'Agency FB', arial;
+    font-size: 35vw;
+}
+      }
+
+    
+
